@@ -1,14 +1,198 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>MONCV - Gisine</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 </head>
 
 <body>
 
+    <nav class="navbar navbar-expand-lg bg-primary text-uppercase fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#page-top">Gisine Rajapaksha</a>
+            <button class="navbar-toggler text-uppercase font-weight-bold bg-white text-black rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"> Menu
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto">
+                  <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#home">Accueil</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">A Propos</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="header bg-secondary text-white text-center" id="home">
+        <div class="container d-flex align-items-center flex-column">
+            <div class="title">
+                <h1 class="header-title text-uppercase">Gisine Rajapaksha</h1>
+                <h2 class="header-title text-uppercase text-bg-info">Concepteur Développeur d'Application</h2>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-section portfolio" id="portfolio">
+        <div class="container">
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+            <br>
+            <br>
+            <div class="row justify-content-center">
+                <!-- Premier Projet-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"></div>
+                        </div>
+                        <img class="img-fluid w-100" src="img/tmb.gif"/>
+                    </div>
+                </div>
+                <!-- Deuxieme Projet-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"></div>
+                        </div>
+                        <img class="img-fluid w-100" src="img/cv.gif"/>
+                    </div>
+                </div>   
+            </div>
+        </div>              
+    </section>
+
+    <section class="page-section bg-black text-white mb-0" id="about">
+        <br>
+        <div class="container">
+            <h2 class="page-section-heading text-center text-uppercase text-white">A Propos de moi</h2>
+            <br>
+            <div class="row">
+                <div class="text-center ms-auto">
+                    <p class="lead">Je suis en apprentisage pour devenir Concepteur Développeur d'Application. Je suis passioné depuis l'enfance sur l'avancée de la technologie. Je suis récemment penché sur l'évolution de la construction d'un site Web. Cela m'a permis de m'instruire dans le domaine du Web. Je suis prêt à toute épreuve pour développer mes compétences.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-section" id="contact">
+        <br>
+        <div class="container">
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0 text-white">Formulaire de contact</h2>
+            <br>
+            <br>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-xl-7">
+
+                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                            <label for="name">Nom</label>
+                            <div class="invalid-feedback" data-sb-feedback="name:required">Votre nom est requis.</div>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                            <label for="email">Adresse Mail</label>
+                            <div class="invalid-feedback" data-sb-feedback="email:required">Votre adresse mail est requis.</div>
+                            <div class="invalid-feedback" data-sb-feedback="email:email">L'adresse mail n'est pas valide.</div>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                            <label for="phone">N° de Téléphone</label>
+                            <div class="invalid-feedback" data-sb-feedback="phone:required">Votre numéro de téléphone est requis</div>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                            <label for="message">Message</label>
+                            <div class="invalid-feedback" data-sb-feedback="message:required">Votre message est requis</div>
+                        </div>
+
+                        <div class="d-none" id="submitSuccessMessage">
+                            <div class="text-center mb-3">
+                                <div class="fw-bolder text-white text-bg-primary">Votre formulaire est envoyé.</div>
+                            </div>
+                        </div>
+
+                        <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Erreur : Votre formulaire n'a pas être envoyé.</div></div>
+
+                        <button class="btn btn-primary btn-xl disabled text-bg-primary" id="submitButton" type="submit">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="footer-text text-uppercase mb-4">Merci d'avoir visité mon site</h4>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyright py-4 text-center text-white">
+        <div class="container"><small>Copyright &copy; Gisine Portfolio 2023</small></div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">TMB Photos</h2><br>
+                                <div class="portfolio-container"> <img class="img-fluid rounded mb-5" src="img/tmb.gif"/></a>
+</div>                           
+                                <p class="mb-4">Ce projet a été fait durant mon apprentissage dans la création de site Wordpress. Il m'a permis de pouvoir customiser une page grâce à différents thèmes et extensions. Et ainsi, j'ai pu comprendre le fonctionnement de différents éléments sur un site Web.</p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Retour
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="0" aria-labelledby="portfolioModal2" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Présentation</h2><br>
+                                <div class="portfolio-container"> <img class="img-fluid rounded mb-5" src="img/cv.gif"/></a>
+</div>                           
+                                <p class="mb-4">Ce site est un CV fait durant mon apprentisage en HTML avec l'utilisation de CSS et de Javascript.</p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Retour
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
 </body>
-<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 </html>
