@@ -42,7 +42,7 @@ html{
 .header {
     padding-top: calc(6rem + 100px);
     padding-bottom: 10rem;
-    background-image: url(img/fond.gif);
+    background-image: url(images/fond.gif);
 }
 
 .title{
